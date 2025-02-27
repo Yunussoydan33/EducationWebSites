@@ -1,0 +1,103 @@
+/* Genel Container */
+.home-price-container {
+    width: 100%;
+    margin: 50px auto;
+    text-align: center;
+  }
+  
+  /* Kırmızı Üst Bilgi Alanı */
+  .price-banner {
+    background-color: #FFAC1D;
+    color: white;
+    padding: 40px;
+    border-radius: 10px;
+  }
+  
+  .price-banner h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .price-banner p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  /* Paket İçerik Bölümü */
+  .price-content {
+    margin-top: 50px;
+  }
+  
+  .price-content h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .price-content p {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+  
+  /* Paket Kartları */
+  .price-packages {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    margin: 0 auto;
+  }
+  
+  /* Paket Tasarımı */
+  .package {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+  }
+  
+  .package-icon {
+    width: 50px;
+  }
+  
+  .package-info {
+    text-align: left;
+  }
+  
+  .package-info h3 {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .package-info .package-count {
+    font-size: 16px;
+    color: #888;
+    margin-top: -5px;
+  }
+  
+  .package-info .package-desc {
+    font-size: 14px;
+    color: #555;
+    margin-top: 10px;
+    line-height: 1.4;
+  }
+  
+  /* Basic ve Premium Renkleri */
+  .basic {
+    color: #c8102e;
+  }
+  
+  .premium {
+    color: #d81b60;
+  }
+  
+  /* İki Paket Arasındaki Ayırıcı */
+  .package-divider {
+    width: 100%;
+    border: 0;
+    height: 1px;
+    background-color: #ddd;
+    margin: 20px 0;
+  }
+  

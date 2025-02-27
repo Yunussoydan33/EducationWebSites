@@ -1,0 +1,75 @@
+.login-container {
+  background-color: #edf3f3;
+  padding: 50px 0; /* 📌 Üstten boşluk ekleyerek hizala */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* 📌 İçeriği yatayda ortala */
+  min-height: 100vh; /* 📌 Sayfanın tamamını kaplamasını sağla */
+}
+
+.login-title {
+  font-size: 18px;
+  font-weight: bold;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+.login-options {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.login-card {
+  background: white;
+  border-radius: 5px;
+  padding: 15px;
+  width: 350px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.login-icon {
+  width: 100px;
+  height: 100px;
+}
+
+h3 {
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+p {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.join-btn {
+  background: #ff7a00;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  width: 100%;
+}
+
+.renew-btn {
+  background: #5a98d0;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  width: 100%;
+  margin-top: 5px;
+}
+
+.join-btn.disabled {
+  background: #888;
+  cursor: not-allowed;
+}

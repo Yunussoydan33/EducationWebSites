@@ -1,0 +1,150 @@
+/* Navbar Genel Stil */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #FFAC1D;
+  border-bottom: 2px solid #ddd;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  z-index: 1000;
+}
+
+/* Logo */
+.navbar-left .logo {
+  height: 90px;
+  object-fit: contain;
+}
+
+/* Menü */
+.navbar-center ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.navbar-center ul li {
+  display: inline-block;
+  position: relative;
+}
+
+.navbar-center ul li a {
+  text-decoration: none;
+  color: black;
+  transition: 0.3s;
+}
+
+.navbar-center ul li a:hover {
+  color: #c8102e;
+}
+
+/* Alt Menü - Morpa Kampüs */
+.sub-menu {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.sub-menu a {
+  font-size: 14px;
+  color: #333;
+  text-decoration: none;
+}
+
+.sub-menu a:hover {
+  text-decoration: underline;
+  color: #c8102e;
+}
+
+/* Sağ Taraf */
+.navbar-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  margin-right: 100px; /* 📌 Sola kaydır */
+}
+
+/* Üye Giriş ve Üye Ol */
+.user-actions {
+  display: flex;
+  gap: 10px; /* 📌 Butonlar yanyana */
+  justify-content: center; /* 📌 Ortaya hizala */
+  width: 100%;
+}
+
+.login-btn {
+  background-color: #283b54;
+  color: white;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.register-btn {
+  background-color: #ff7500;
+  color: white;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* 📌 Sosyal Medya ve Telefon */
+.social-contact {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  background-color: white;
+  padding: 5px 15px;
+  border-radius: 5px;
+  justify-content: center; /* 📌 Ortaya hizala */
+  width: 100%; /* 📌 Alanı kapla */
+}
+
+/* Sosyal Medya */
+.social-media {
+  display: flex;
+  gap: 10px;
+}
+
+.social-icon {
+  font-size: 18px;
+  cursor: pointer;
+  color: #444;
+  transition: 0.3s;
+}
+
+.social-icon:hover {
+  color: #c8102e;
+}
+
+/* Telefon Bilgisi */
+.contact-info {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #283b54;
+}
+
+.phone-icon {
+  font-size: 18px;
+  color: #c8102e;
+}
+
+.phone-number {
+  font-weight: bold;
+}
+

@@ -1,0 +1,23 @@
+.footer {
+    background-color: #FFAC1D;
+    color: white;
+    text-align: center;
+    padding: 15px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* ✔ Ortalamak için */
+    gap: 15px; /* ✔ Logo ile yazı arasındaki boşluğu azalt */
+  }
+  
+  /* Logo Ayarları */
+  .footer-logo {
+    width: 60px; /* ✔ Logonun boyutu */
+    height: auto;
+  }
+  
+  /* Yazı */
+  .footer p {
+    font-size: 16px;
+    margin: 0;
+  }
+  

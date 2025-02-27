@@ -1,0 +1,30 @@
+.slider-container {
+    width: 80%;
+    margin: 200px auto;
+}
+
+/* React Slick slide öğelerini tam ortalamak için */
+.slick-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* Resimleri tam ortalar */
+    
+}
+
+/* Resmin tam ortada görünmesini sağlar */
+.slick-slide div {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    
+}
+
+/* Resim ayarları */
+.slider-img {
+    width: 100%; /* Resmi biraz daha küçülterek ortalamayı sağladık */
+    height: 700px;
+    object-fit: cover;
+    border-radius: 10px;
+
+}

@@ -1,0 +1,69 @@
+.education-info-container {
+    width: 85%;
+    margin: 60px auto;
+    text-align: center;
+  }
+  
+  .education-title {
+    font-size: 28px; /* Başlığı büyüttüm */
+    font-weight: bold;
+    color: #111;
+    margin-bottom: 40px;
+  }
+  
+  /* İçeriği yan yana hizalama ve daha yakınlaştırma */
+  .education-content {
+    display: flex;
+    justify-content: center; /* Ortalamak için */
+    align-items: center;
+  }
+  
+  /* Resim alanı */
+  .education-image {
+    width: 40%; /* Alanı daralttım, yazıya yaklaştırdım */
+    display: flex;
+    justify-content: flex-end; /* Resmi sağa ittik */
+    align-items: center;
+    margin-right: 50px; /* Resmi yazıya biraz daha yaklaştırdım */
+  }
+  
+  .education-image img {
+    width: 100%;
+    max-width: 550px; /* Resmi büyüttüm */
+    border-radius: 999900px;
+  }
+  
+  /* Yazı kısmı */
+  .education-text {
+    width: 55%; /* Yazı alanını genişlettim */
+    text-align: left;
+    margin-left: 0px; /* Yazıyı biraz sola çektim, resme yaklaştırdım */
+  }
+  
+  .education-text p {
+    font-size: 20px; /* Metni büyüttüm */
+    color: #333;
+    margin-bottom: 15px;
+    font-weight: 500;
+  }
+  
+  .education-text ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .education-text ul li {
+    font-size: 18px; /* Listeyi büyüttüm */
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+  }
+  
+  .education-text ul li::before {
+    content: "✔️";
+    margin-right: 10px;
+    color: #c8102e;
+    font-size: 20px; /* Tik işaretini büyüttüm */
+  }
+  
