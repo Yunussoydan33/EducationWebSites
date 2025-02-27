@@ -1,13 +1,14 @@
 .login-container {
   background-color: #edf3f3;
-  padding: 50px 0; /* 📌 Üstten boşluk ekleyerek hizala */
+  padding: 50px 0; /* Sayfanın yukarısına biraz boşluk bırak */
   text-align: center;
   display: flex;
   flex-direction: column;
-  align-items: center; /* 📌 İçeriği yatayda ortala */
-  min-height: 100vh; /* 📌 Sayfanın tamamını kaplamasını sağla */
+  align-items: center;
+  min-height: 100vh; /* Sayfanın tamamını kaplamasını sağla */
 }
 
+/* Başlık */
 .login-title {
   font-size: 18px;
   font-weight: bold;
@@ -15,53 +16,63 @@
   margin-bottom: 20px;
 }
 
+/* Kartları İçeren Alan */
 .login-options {
   display: flex;
   justify-content: center;
   gap: 20px;
+  flex-wrap: wrap; /* 📌 Ekran küçüldüğünde kartları alt alta diz */
+  width: 90%; /* 📌 Küçük ekranlarda taşmasını engelle */
+  max-width: 1200px;
 }
 
+/* Her Kart */
 .login-card {
   background: white;
-  border-radius: 5px;
-  padding: 15px;
-  width: 350px;
+  border-radius: 10px;
+  padding: 20px;
+  width: 280px; /* 📌 Küçük ekranlar için küçültülmüş genişlik */
   text-align: center;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
+/* İkonlar */
 .login-icon {
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
 }
 
+/* Başlık */
 h3 {
   margin: 10px 0;
   font-size: 18px;
 }
 
+/* Açıklama Metni */
 p {
   font-size: 14px;
   color: #555;
   margin-bottom: 15px;
 }
 
+/* Üye Ol Butonu */
 .join-btn {
   background: #ff7a00;
   color: white;
   border: none;
-  padding: 8px 12px;
+  padding: 10px;
   border-radius: 5px;
   cursor: pointer;
   font-weight: bold;
   width: 100%;
 }
 
+/* Üyelik Yenile Butonu */
 .renew-btn {
   background: #5a98d0;
   color: white;
   border: none;
-  padding: 8px 12px;
+  padding: 10px;
   border-radius: 5px;
   cursor: pointer;
   font-weight: bold;
@@ -69,7 +80,26 @@ p {
   margin-top: 5px;
 }
 
+/* Üye Ol Butonu - Pasif */
 .join-btn.disabled {
   background: #888;
   cursor: not-allowed;
+}
+
+/* 📱 Mobil Cihazlar İçin Tasarım Güncellemesi */
+@media (max-width: 768px) {
+  .login-options {
+      flex-direction: column; /* 📌 Kartları alt alta getir */
+      align-items: center;
+      gap: 15px;
+  }
+
+  .login-card {
+      width: 90%; /* 📌 Kartları ekran genişliğine göre büyüt */
+      max-width: 320px;
+  }
+
+  .login-title {
+      font-size: 16px; /* Başlığı biraz küçült */
+  }
 }

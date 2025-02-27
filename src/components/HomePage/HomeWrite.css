@@ -1,67 +1,152 @@
 .home-write-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #FFAC1D;
-    padding: 40px;
-    border-radius: 10px;
-    width: 90%;
-    margin: 50px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #FFAC1D;
+  padding: 40px;
+  border-radius: 10px;
+  width: 90%;
+  margin: 50px auto;
+  gap: 20px; /* 📌 Bölümler arasına boşluk ekledik */
+}
+
+/* Yazı Alanı */
+.text-section {
+  flex: 1;
+  padding: 20px;
+}
+
+.text-section h1 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #111;
+}
+
+.text-section p {
+  font-size: 18px;
+  color: #333;
+  line-height: 1.6;
+  margin-top: 15px;
+}
+
+.text-section ul {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+.text-section ul li {
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+/* Başlat Butonu */
+.start-button {
+  background-color: #c8102e;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 20px;
+  font-size: 18px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.start-button:hover {
+  background-color: #a00d24;
+}
+
+/* Görsel Alanı */
+.image-section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-section img {
+  width: 80%;
+  max-width: 500px;
+  border-radius: 10px;
+}
+
+/* 📱 **Mobil ve Tablet İçin Responsive Ayarlar** */
+@media (max-width: 1024px) {
+  .home-write-container {
+      flex-direction: column; /* 📌 Tabletlerde alt alta gelsin */
+      text-align: center;
+      padding: 30px;
   }
-  
-  .text-section {
-    flex: 1;
-    padding: 20px;
-  }
-  
+
   .text-section h1 {
-    font-size: 36px;
-    font-weight: bold;
-    color: #111;
+      font-size: 32px;
   }
-  
+
   .text-section p {
-    font-size: 18px;
-    color: #333;
-    line-height: 1.6;
-    margin-top: 15px;
+      font-size: 16px;
   }
-  
-  .text-section ul {
-    margin-top: 10px;
-    padding-left: 20px;
-  }
-  
-  .text-section ul li {
-    font-size: 16px;
-    margin-top: 5px;
-  }
-  
-  .start-button {
-    background-color: #c8102e;
-    color: white;
-    padding: 12px 24px;
-    border: none;
-    border-radius: 20px;
-    font-size: 18px;
-    cursor: pointer;
-    margin-top: 20px;
-  }
-  
-  .start-button:hover {
-    background-color: #a00d24;
-  }
-  
-  .image-section {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
+
   .image-section img {
-    width: 80%;
-    max-width: 500px;
-    border-radius: 10px;
+      width: 90%; /* 📌 Tablet ekranında biraz büyüt */
   }
-  
+}
+
+@media (max-width: 768px) {
+  .home-write-container {
+      flex-direction: column; /* 📌 Mobilde tamamen alt alta */
+      width: 95%;
+      text-align: center;
+      padding: 20px;
+  }
+
+  .text-section {
+      padding: 10px;
+  }
+
+  .text-section h1 {
+      font-size: 28px;
+  }
+
+  .text-section p {
+      font-size: 15px;
+  }
+
+  .text-section ul li {
+      font-size: 14px;
+  }
+
+  .start-button {
+      font-size: 16px;
+      padding: 10px 20px;
+  }
+
+  .image-section img {
+      width: 100%; /* 📌 Küçük ekranlarda tam ekran genişliği */
+      max-width: 400px;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-write-container {
+      padding: 15px;
+      width: 100%;
+      border-radius: 0; /* 📌 Mobilde köşe yuvarlatmasını kaldır */
+  }
+
+  .text-section h1 {
+      font-size: 24px;
+  }
+
+  .text-section p {
+      font-size: 14px;
+  }
+
+  .start-button {
+      font-size: 14px;
+      padding: 8px 16px;
+  }
+
+  .image-section img {
+      width: 100%;
+      max-width: 300px; /* 📌 Küçük telefonlarda daha iyi görünüm */
+  }
+}

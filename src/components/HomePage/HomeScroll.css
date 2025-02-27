@@ -1,6 +1,6 @@
 .slider-container {
     width: 80%;
-    margin: 200px auto;
+    margin: 150px auto; /* 📌 Başlangıçta biraz daha aşağıda olsun */
 }
 
 /* React Slick slide öğelerini tam ortalamak için */
@@ -9,7 +9,6 @@
     justify-content: center;
     align-items: center;
     text-align: center; /* Resimleri tam ortalar */
-    
 }
 
 /* Resmin tam ortada görünmesini sağlar */
@@ -17,14 +16,47 @@
     display: flex;
     justify-content: center;
     width: 100%;
-    
 }
 
 /* Resim ayarları */
 .slider-img {
-    width: 100%; /* Resmi biraz daha küçülterek ortalamayı sağladık */
-    height: 700px;
+    width: 100%; /* 📌 Resmin boyutunu tamamen ayarla */
+    height: 600px;
     object-fit: cover;
     border-radius: 10px;
+}
 
+/* 📱 **Mobil ve Tablet İçin Responsive Ayarlar** */
+@media (max-width: 1024px) {
+    .slider-container {
+        width: 90%; /* 📌 Daha küçük ekranlarda genişliği artır */
+        margin: 120px auto; /* 📌 Daha yukarı taşı */
+    }
+
+    .slider-img {
+        height: 500px; /* 📌 Tablet için yüksekliği küçült */
+    }
+}
+
+@media (max-width: 768px) {
+    .slider-container {
+        width: 95%;
+        margin: 100px auto; /* 📌 Mobilde biraz daha yukarı taşı */
+    }
+
+    .slider-img {
+        height: 400px; /* 📌 Mobilde resmin yüksekliğini küçült */
+    }
+}
+
+@media (max-width: 480px) {
+    .slider-container {
+        width: 100%;
+        margin: 80px auto; /* 📌 Daha yukarı al */
+    }
+
+    .slider-img {
+        height: 300px; /* 📌 Küçük telefon ekranları için daha küçük */
+        border-radius: 5px; /* 📌 Köşeleri biraz daha küçük yap */
+    }
 }

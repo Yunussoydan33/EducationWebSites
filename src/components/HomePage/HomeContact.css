@@ -1,93 +1,119 @@
 /* Genel Form Container */
 .contact-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #333;
-    padding: 40px;
-    border-radius: 10px;
-    width: 90%;
-    margin: 50px auto;
-  }
-  
-  /* Form Alanı */
-  .contact-form {
-    width: 50%;
-    color: white;
-  }
-  
-  .contact-form h2 {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 20px;
-  }
-  
-  /* İki Giriş Alanını Yan Yana Koy */
-  .input-group {
-    display: flex;
-    gap: 10px;
-  }
-  
-  .input-group input {
-    flex: 1;
-  }
-  
-  /* Giriş Alanları */
-  .contact-form input {
-    width: 100%;
-    padding: 12px;
-    margin: 10px 0;
-    border: none;
-    border-radius: 5px;
-  }
-  
-  /* Gönder Butonu */
-  .submit-btn {
-    width: 100%;
-    padding: 12px;
-    background-color: #FFAC1D;
-    color: white;
-    border: none;
-    border-radius: 20px;
-    font-size: 18px;
-    cursor: pointer;
-    margin-top: 10px;
-  }
-  
-  .submit-btn:hover {
-    background-color: #FFAC1D;
-  }
-  
-  /* Gizlilik Metni */
-  .privacy-text {
-    font-size: 14px;
-    margin-top: 15px;
-    display: flex;
-    align-items: flex-start;
-  }
-  
-  .privacy-text input {
-    margin-right: -140px;
-  }
-  
-  .privacy-text a {
-    color: #FFAC1D;
-    text-decoration: none;
-  }
-  
-  
-  
-  /* Sağdaki Görsel */
-  .contact-image {
-    width: 45%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .contact-image img {
-    width: 100%;
-    max-width: 400px;
-    border-radius: 10px;
-  }
-  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 40px;
+  border-radius: 10px;
+  width: 90%;
+  margin: 50px auto;
+  flex-wrap: wrap; /* 📌 Küçük ekranlarda alt alta geç */
+}
+
+/* Form Alanı */
+.contact-form {
+  width: 50%;
+  color: white;
+}
+
+.contact-form h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* İki Giriş Alanını Yan Yana Koy */
+.input-group {
+  display: flex;
+  gap: 10px;
+}
+
+.input-group input {
+  flex: 1;
+}
+
+/* Giriş Alanları */
+.contact-form input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+}
+
+/* Gönder Butonu */
+.submit-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #FFAC1D;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  font-size: 18px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.submit-btn:hover {
+  background-color: #e69c00;
+}
+
+/* Gizlilik Metni */
+.privacy-text {
+  font-size: 14px;
+  margin-top: 15px;
+  display: flex;
+  align-items: center; /* 📌 Checkbox ile yazıyı hizala */
+}
+
+.privacy-text input {
+  margin-right: 10px; /* 📌 Hatalı -140px kaldırıldı */
+}
+
+.privacy-text a {
+  color: #FFAC1D;
+  text-decoration: none;
+}
+
+/* Sağdaki Görsel */
+.contact-image {
+  width: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-image img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+}
+
+/* 📱 **Mobil Uyumluluk (`Responsive`) */
+@media (max-width: 1024px) {
+.contact-container {
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.contact-form {
+  width: 100%;
+  text-align: center;
+}
+
+.input-group {
+  flex-direction: column;
+  gap: 5px;
+}
+
+.contact-image {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.contact-image img {
+  max-width: 300px;
+}
+}
